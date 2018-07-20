@@ -1,0 +1,70 @@
+{
+  "name": "my-app-web-native",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "------------- WEB -------------": "",
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "------------- MOBILE -------------": "",
+    "start:native": "react-native-scripts-ts start --reset-cache",
+    "android": "react-native-scripts-ts android --reset-cache",
+    "ios": "react-native-scripts-ts ios --reset-cache",
+    "------------- TEST -------------": "",
+    "test": "npm run test:web && npm run test:native",
+    "test:native": "jest",
+    "test:web": "react-scripts-ts test --env=jsdom",
+    "------------- MISC -------------": "",
+    "clean": "watchman watch-del-all && rm -rf node_modules/ && npm cache verify && npm install",
+    "eject:web": "react-scripts-ts eject",
+    "eject:native": "react-native-scripts-ts eject"
+  },
+  "main": "./node_modules/react-native-scripts-ts/build/bin/crna-entry.js",
+  "dependencies": {
+    "expo": "^27.0.1",
+    "react": "16.3.1",
+    "react-dom": "16.3.1",
+    "react-native": "~0.55.2",
+    "react-native-web": "^0.8.9",
+    "react-scripts-ts": "2.16.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.0",
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "@types/react-native": "^0.55.28",
+    "@types/react-test-renderer": "^16.0.1",
+    "jest-expo": "~27.0.0",
+    "react-native-scripts": "1.14.0",
+    "react-native-scripts-ts": "1.15.0",
+    "react-native-typescript-transformer": "^1.2.3",
+    "react-test-renderer": "16.3.1",
+    "ts-jest": "^22.4.6",
+    "tslib": "^1.9.1",
+    "typescript": "^2.8.3"
+  },
+  "jest": {
+    "globals": {
+      "ts-jest": {
+        "useBabelrc": true
+      }
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ],
+    "preset": "jest-expo",
+    "testMatch": [
+      "**/__tests__/**/*.[tj]s?(x)",
+      "**/?(*.)(spec|test).[tj]s?(x)"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    }
+  }
+}
