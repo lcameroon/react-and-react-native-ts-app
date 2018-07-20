@@ -55,3 +55,7 @@ import Header from './Header';
 ```
 
 Also, when working on the native app, be mindful that VS Code's `Go To Definition` will always jump to the `index.tsx` (web) file.
+
+---
+
+<img src="https://raw.githubusercontent.com/lcameroon/react-and-react-native-ts-app/master/screenshot.png" width="100%" />
