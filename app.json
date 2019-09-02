@@ -1,9 +1,20 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0",
-    "packagerOpts": {
-      "sourceExts": ["ts", "tsx"],
-      "transformer": "node_modules/react-native-typescript-transformer/index.js"
+    "version": "1.0.0",
+    "privacy": "public",
+    "sdkVersion": "32.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
     }
   }
 }
